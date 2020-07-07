@@ -1,0 +1,215 @@
+#game {
+    position:absolute;
+    height: 100%;
+    width:100%;
+    top:0;
+    right:0;
+    background-color:#2F112D;
+    font-family: 'Kanit', sans-serif;
+}
+
+#info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    right:0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    display:none;
+}
+
+#info p {
+    font-size:18px;
+}
+
+#pauseModal {
+    background-color:rgba(0,0,0,0.4);
+    border:0px;
+    position: fixed;
+    right:0;
+    display: none;
+    top:0;
+    overflow:auto;
+    width:100%;
+    height:100%;
+    z-index: 20000;
+    padding-top:270px;
+}
+
+.modal-content {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color:white;
+    width:300px;
+    padding: 20px;
+    margin:auto;
+    border: 1px solid #888;
+    border-radius:20px;
+    display:flex;
+    font-size:18px;
+    color:#272727;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.modal-btn{
+    border: 0px;
+    border-radius: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+}
+
+.modal-content h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#play {
+    position: fixed;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top:280px;
+}
+
+#question{
+   width:370px;
+   height:150px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -30px;
+    
+}
+
+.answer {
+    width:370px;
+    height:150px;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#question img {
+    width:370px;
+    position: fixed;
+}
+
+#question p {
+    z-index: 1000;
+    font-size: 18px;
+    margin:0;
+    text-align: center;
+}
+
+#answers img {
+    width: 180px;
+    position: fixed;
+}
+
+.ansrow {
+    display: flex;
+    width: 370px;
+    height:67.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ansrow p {
+    font-size: 16px;
+    margin:0;
+    text-align: center;
+    z-index:1000;
+}
+
+#answers-row2 {
+    margin-top: 7px;
+}
+
+#hearts {
+    position: fixed;
+    margin-top:300px;
+    margin-left:70px;
+}
+
+#qnum {
+    position: fixed;
+    margin-top:325px;
+    margin-left:50px;
+    font-size: 20px;
+    color:white
+}
+
+#timer {
+    color:rgb(255, 220, 220);
+    margin-left:350px;
+    padding-top:50px;
+    font-size:28px
+}
+
+#ending {
+    width:100%;
+    height:100%;
+    position:fixed ;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top:280px;
+    text-align: center;
+    color:rgb(83, 58, 10)
+}
+
+#ending p {
+    margin-top:-25px;
+    font-size: 20px;
+    color:rgb(85, 61, 16)
+}
+
+#end-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:250px;
+    padding-top: 40px;
+    padding-right: 50px;
+}
+
+#end-buttons button {
+    padding:10px 5px;
+    height: 60px;
+    width:100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#res {
+    padding:0 10px;
+    background-color:rgb(130, 168, 52);
+    color:white
+}
+
+#main {
+    background-color:rgb(190, 74, 74);color:white
+}

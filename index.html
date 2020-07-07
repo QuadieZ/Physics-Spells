@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="phaser.min.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+        <link rel="stylesheet" type="text/css" href="game.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="game">
+
+            <!--infoPage-->
+            <div id="info">
+                <h2>Physics Spells: The Game</h2>
+                <p>เกมนี้ถูกสร้างขึ้นด้วย HTML, CSS, javascript และ </br>
+                    Phaser3 เพื่อเป็นส่วนหนึ่งของวิชาฟิสิกส์</br>
+                    มัธยมศึกษาปีที่ 6 รร.เขมะสิริอนุสสรณ์</br>
+                    น.ส.พิชญาภา คณาพัฒนวงศ์
+                </p>
+                <h3>วิธีการเล่น</h3>
+                <p> เลือกคำตอบให้ถูกต้องจากข้อยส์สี่ข้อ</br>
+                    เพื่อตอบคำถาม โดยอ้างอิงเนื้อหาจากสูตรฟิสิกส์</br>
+                    ที่พบบ่อยในข้อสอบ และเนื้อหาจากหนังสือสรุปสูตร</br>
+                    ฟิสิกส์ Physics Spells: High School Edition</br>
+                    <a href="#">ลิ้งอีบุ๊ค</a>
+                </p>
+                <p>ดูเบื้องหลังการทำงานได้<a href="#">ที่นี่</a></p>
+            </div>
+
+            <!--PauseModal-->
+            <div id="pauseModal">
+                <div class="modal-content">
+                    <h3>หยุดเกมชั่วคราว</h3>
+                    <div class="buttons">
+                        <button class="modal-btn" id="continue" style="background-color:olivedrab;color:white">เล่นต่อ</button>
+                        <button class="modal-btn" id="restart" style="background-color: rgb(196, 116, 132);color:white">เริ่มใหม่</button>
+                        <button class="modal-btn" id="leave" style="background-color:firebrick;color:white">ออกจากเกม</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--GamePlay Div-->
+            <div id="play">
+                <div id="question">
+                    <img src="./assets/questionplate.png">
+                    <p id="questionText">HI</p>
+                </div>
+                <div id="answers">
+                    <div id="answers-row1" class="ansrow">
+                        <div class="answer">
+                            <img src="./assets/ansplate.png" onclick="gameState.answerOne()">
+                            <p id="ans1" onclick="gameState.answerOne()">HI</p>
+                        </div>
+                        <div class="answer">
+                            <img src="./assets/ansplate.png" onclick="gameState.answerTwo()">
+                            <p id="ans2" onclick="gameState.answerTwo()">HI</p>
+                        </div>
+                    </div>
+                    <div id="answers-row2" class="ansrow" >
+                        <div class="answer">
+                            <img src="./assets/ansplate.png" onclick="gameState.answerThree()">
+                            <p id="ans3" onclick="gameState.answerThree()">HI</p>
+                        </div>
+                        <div class="answer"> 
+                            <img src="./assets/ansplate.png"onclick="gameState.answerFour()">
+                            <p id="ans4" onclick="gameState.answerFour()">HI</p>
+                        </div> 
+                    </div>
+                </div>
+
+                <div id="hearts">
+                
+                </div>
+                <div id="qnum">
+                    <p id="qnum-text">HI</p>
+                    
+                </div>
+                <div  id="timer"><h2 id="timenum"></h2></div>
+            </div>
+
+
+            <!--Ending Div-->
+            <div id="ending">
+                <h1 id="endh"></h1>
+                <p id="endp"></p>
+                <div id="end-buttons">
+                    <button id="res">เล่นอีกครั้ง</button>
+                    <button id="main">กลับสู่หน้าหลัก</button>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
