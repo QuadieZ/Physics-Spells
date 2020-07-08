@@ -444,7 +444,7 @@ class BossFight extends Phaser.Scene {
     gameState.pause.setInteractive();
 
     gameState.pause.on("pointerup", () => {
-      document.getElementById("pauseModal").style.display = "block";
+      document.getElementById("pauseModal").style.display = "flex";
       this.scene.pause();
     });
 
@@ -639,7 +639,7 @@ class TimeAttack extends Phaser.Scene {
     gameState.pause.setInteractive();
 
     gameState.pause.on("pointerup", () => {
-      document.getElementById("pauseModal").style.display = "block";
+      document.getElementById("pauseModal").style.display = "flex";
       this.scene.pause();
     });
 
