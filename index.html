@@ -44,44 +44,46 @@
 
             <!--GamePlay Div-->
             <div id="play">
-                <div id="question">
-                    <img src="./assets/questionplate.png">
-                    <p id="questionText">HI</p>
-                </div>
-                <div id="answers">
-                    <div id="answers-row1" class="ansrow">
-                        <div class="answer">
+                <div id="container">
+                    <div class="row">
+                        <img src="./assets/questionplate.png">
+                        <p id="questionText" class="gameText">HI</p>
+                    </div>
+                    <div class="row">
+                        <div class="ans-col">
                             <img src="./assets/ansplate.png" onclick="gameState.answerOne()">
-                            <p id="ans1" onclick="gameState.answerOne()">HI</p>
+                            <p id="ans1" class="gameText" onclick="gameState.answerOne()">HI</p>
                         </div>
-                        <div class="answer">
+                        <div class="ans-col">
                             <img src="./assets/ansplate.png" onclick="gameState.answerTwo()">
-                            <p id="ans2" onclick="gameState.answerTwo()">HI</p>
+                            <p id="ans2" class="gameText" onclick="gameState.answerTwo()">HI</p>
                         </div>
                     </div>
-                    <div id="answers-row2" class="ansrow" >
-                        <div class="answer">
+                    <div class="row">
+                        <div class="ans-col">
                             <img src="./assets/ansplate.png" onclick="gameState.answerThree()">
-                            <p id="ans3" onclick="gameState.answerThree()">HI</p>
+                            <p id="ans3" class="gameText" onclick="gameState.answerThree()">HI</p>
                         </div>
-                        <div class="answer"> 
+                        <div class="ans-col">
                             <img src="./assets/ansplate.png"onclick="gameState.answerFour()">
-                            <p id="ans4" onclick="gameState.answerFour()">HI</p>
-                        </div> 
+                            <p id="ans4" class="gameText" onclick="gameState.answerFour()">HI</p>
+                        </div>
                     </div>
-                </div>
-
-                <div id="hearts">
+                    <div id="hearts">
                 
+                    </div>
+                    <div id="qnum">
+                        <p id="qnum-text">HI</p>
+                        
+                    </div>
+                    <div  id="timer"><h2 id="timenum"></h2></div>
                 </div>
-                <div id="qnum">
-                    <p id="qnum-text">HI</p>
-                    
-                </div>
-                <div  id="timer"><h2 id="timenum"></h2></div>
+              
+               
+                
             </div>
-
-
+                
+                
             <!--Ending Div-->
             <div id="ending">
                 <h1 id="endh"></h1>

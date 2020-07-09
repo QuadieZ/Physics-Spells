@@ -1,3 +1,4 @@
+/*assets*/
 var gameState = {};
 
 const createQ = (question, ans1, cor1, ans2, cor2, ans3, cor3, ans4, cor4) => {
@@ -299,6 +300,7 @@ class Main extends Phaser.Scene {
   }
 }
 
+
 class Categories extends Phaser.Scene {
   constructor() {
     super("Categories");
@@ -350,6 +352,7 @@ class Categories extends Phaser.Scene {
   }
 }
 
+
 class Info extends Phaser.Scene {
   constructor() {
     super("Info");
@@ -379,6 +382,7 @@ class Info extends Phaser.Scene {
     );
   }
 }
+
 
 class BossFight extends Phaser.Scene {
   constructor() {
@@ -418,10 +422,10 @@ class BossFight extends Phaser.Scene {
 
     gameState.devil.play("devilanim");
     gameState.evil = this.sound.add("evil");
+    
     //main
     gameState.main = this.add.sprite(140, 715, "main").setScale(0.24);
 
-    //gameState.main.setFrame(1)
     document.getElementById('timenum').innerText = ''
 
     this.time.addEvent({
@@ -435,6 +439,7 @@ class BossFight extends Phaser.Scene {
     if (!gameState.music.isPlaying) {
       gameState.music.play();
     }
+
     //pause
 
     gameState.pause = this.add
