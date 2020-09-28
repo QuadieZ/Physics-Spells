@@ -260,10 +260,10 @@ class Main extends Phaser.Scene {
       .setScale(0.45)
       .setVelocityY(-30);
     gameState.text = this.add.text(
-      80,
+      120,
       620,
       "Click HERE \n To Start the Adventure",
-      { font: "25px", color: "white", align: "center" }
+      { font: "25px kanit", color: "white", align: "center" }
     );
     gameState.eh = this.add.sprite(450, 770, "eh").setScale(0.05);
 
@@ -402,6 +402,7 @@ class BossFight extends Phaser.Scene {
     this.load.image("pause", "./assets/pause.png");
 
     this.load.audio("evil", "./assets/evillaugh.mp3");
+
   }
 
   create() {
@@ -488,6 +489,8 @@ class BossFight extends Phaser.Scene {
       document.getElementById("ans4").innerText =
         gameState.question[i].answers.answer4.ans4;
 
+
+
       document.getElementById("qnum-text").innerText = "คำถามที่ " + (i + 1);
     };
 
@@ -523,7 +526,6 @@ class BossFight extends Phaser.Scene {
       for (let n = 0; n < 3; n++) {
         let heart = document.createElement("img");
         heart.src = "./assets/heart.png";
-        heart.style.width = "50px";
         heart.id = "heart";
         document.getElementById("hearts").appendChild(heart);
       }
@@ -714,7 +716,6 @@ class TimeAttack extends Phaser.Scene {
       for (let n = 0; n < 3; n++) {
         let heart = document.createElement("img");
         heart.src = "./assets/heart.png";
-        heart.style.width = "50px";
         heart.id = "heart";
         document.getElementById("hearts").appendChild(heart);
       }

@@ -22,9 +22,7 @@
     display:none;
 }
 
-#info p {
-    font-size:18px;
-}
+
 
 
 /*Pause*/
@@ -77,11 +75,9 @@
     font-size: 18px;
 }
 
-.modal-content h3 {
-    margin-top: 0px;
-    margin-bottom: 5px;
+#questionText {
+    text-align: center;
 }
-
 
 /*GamePlay*/
 #play {
@@ -91,7 +87,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    padding-top:27%;
+
 }
 
 #container {
@@ -99,9 +95,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    height: 100%;
-    z-index: 1000;
 }
 
 .row {
@@ -129,21 +122,14 @@
     text-align: center;
 }
 
-.gameText {
-    position: relative;
-    font-size: 1rem;
-}
+
 
 /*Display*/
 
-#display {
-  
-}
 
 #hearts {
     position: fixed;
-    margin-top:300px;
-    margin-left:70px;
+
 }
 
 #qnum {
@@ -156,9 +142,8 @@
 
 #timer {
     color:rgb(255, 220, 220);
-    margin-left:350px;
-    padding-top:50px;
-    font-size:28px
+    position: fixed;
+    top:0;
 }
 
 #ending {
@@ -168,32 +153,23 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    padding-top:280px;
     text-align: center;
     color:rgb(83, 58, 10)
 }
 
 #ending p {
-    margin-top:-25px;
-    font-size: 20px;
     color:rgb(85, 61, 16)
 }
 
 #end-buttons {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width:250px;
-    padding-top: 40px;
-    padding-right: 50px;
+    justify-content: center;
+    width:100%;
 }
 
 #end-buttons button {
-    padding:10px 5px;
-    height: 60px;
-    width:100px;
     font-family: 'Kanit', sans-serif;
-    font-size: 18px;
     border: 0;
     border-radius: 10px;
     display: flex;
@@ -212,8 +188,80 @@
     background-color:rgb(190, 74, 74);color:white
 }
 
+@media only screen and (orientation:portrait) {
+
+    #container {
+        width: calc(65vw + 8vh);
+        max-width: 55vh;
+        margin-top:49vh;
+    }
+
+    .gameText {
+        position: relative;
+        font-size: calc(1.3vw + 1.3vh)
+    }
+    
+    #ending {
+        padding-top:40vh;
+    }
+
+    #endh {
+        font-size: 4.5vh;
+    }
+
+    #endp {
+        font-size: 2.5vh;
+        margin-top:-4vh;
+    }
+    #end-buttons {
+        margin-top:-1vh;
+        padding-right:10vh;
+    }
+    #end-buttons button {
+        font-size: 2.5vh;
+        height:8vh;
+        width:14vh;
+        padding: 1vh 2vh;
+        margin-left:1vh;
+    }
+
+    .modal-content {
+        width:70vw;
+        padding: 2vh;
+        font-size:3vh;
+    }
+
+    .modal-btn {
+        padding: 0.5vh 1.5vh;
+        font-family: 'Kanit', sans-serif;
+        font-size: 3vh;
+        margin:0.5vh;
+    }
+    
+    .modal-content h3 {
+        margin-top: 0px;
+        margin-bottom: 1.5vh;
+    }
+    #hearts {
+        margin-top:calc(13vw + 25vh);
+        margin-left: 20vh;
+    }
+
+    #hearts img {
+        height: 8vh;
+    }
+    #timer {
+        margin-left:calc(20vw + 30vh);
+        font-size:calc(3vh + 10px);
+        margin-top:-5vh;
+    }
+    #info p {
+        font-size:calc(1.3vw + 1.3vh)
+    }
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 300px) {
+/* @media only screen and (max-width: 300px) {
     
     .modal-content {
         width:70%;
@@ -237,13 +285,13 @@
     }
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 320px) {
     
     .modal-content {
         width:80%;
     }
     #play {
-        padding-top:45vh;
+        padding-top:48vh;
     }
 
     #container {
@@ -251,11 +299,11 @@
     }
 
     .gameText {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) 
 @media only screen and (min-width: 400px) {
     
     #play {
@@ -281,17 +329,17 @@
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) 
 @media only screen and (min-width: 768px) {
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) 
 @media only screen and (min-width: 992px) {
 
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) 
 @media only screen and (min-width: 1200px) {
 
-}
+} */
