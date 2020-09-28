@@ -290,6 +290,8 @@
     align-items: center;
     justify-content: center;
     color:white;
-    font-size:3vh
+    
+    #cModal p {
+        font-size:3vh
 }
 }
